@@ -21,6 +21,9 @@ fi
 ## Then, source plugins and add commands to $PATH
 zplug load
 
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+
 ## Setup history-substring-search
 ## Better history searching with arrow keys
 if zplug check "zsh-users/zsh-history-substring-search"; then
