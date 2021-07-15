@@ -6,3 +6,5 @@ source "$HOME/.zsh/rc/plugin.zsh"
 source "$HOME/.zsh/rc/option.zsh"
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+echo "here we go"
