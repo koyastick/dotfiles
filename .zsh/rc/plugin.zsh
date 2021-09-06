@@ -24,7 +24,7 @@ fi
 zplug load
 
 # zsh-autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
 
 ## Setup history-substring-search
 ## Better history searching with arrow keys
@@ -35,7 +35,7 @@ fi
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=bg=cyan,fg=white,bold
 
 # zsh-syntax-highlighting
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan,bold
-ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=white
+# ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
+# ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
+# ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan,bold
+ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red

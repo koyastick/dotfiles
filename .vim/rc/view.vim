@@ -41,6 +41,6 @@ if has('vim_starting')
 	let &t_SR .= "\e[4 q"
 endif
 
-" syntax enable
-" set background=dark    "または light
-" colorscheme solarized
+syntax enable
+set background=dark    "または light
+colorscheme solarized
