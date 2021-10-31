@@ -37,7 +37,13 @@ if [ ! -d "$HOME/.config/nvim" ]; then
 fi
 target=${DOTPATH}/.config/nvim/init.vim
 echo "Creating symlink for $target"
-ln -fvns "$target" "${HOME}/.config/nvim/init.vim"
+if [ -e "$target" ]; then
+    echo "$target is existing. Skip."
+    continue;
+else
+    echo "Creating symlink for $target"
+    ln -fvns "$target" "${HOME}/.config/nvim/init.vim"
+fi
 
 # Install plugins managers
 ## Install zplug
