@@ -18,3 +18,6 @@ alias mkdir='mkdir -p'
 alias sudo='sudo '
 alias g++='g++-10'
 alias gb='git checkout $(git for-each-ref --format="%(authorname) %09 %(refname:short)" --sort=authorname | sed "/origin/d" | fzf | awk "{print \$NF}")'
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"
