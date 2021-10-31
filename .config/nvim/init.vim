@@ -18,7 +18,7 @@ call plug#end()
 
 " fzf settings
 let $FZF_DEFAULT_OPTS="--layout=reverse"
-let $FZF_DEFAULT_COMMAND='rg --hidden --column --line-number --no-heading --color=always --smart-case --glob "!.git/**" -- '
+let $FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/**"' 
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
 
 let mapleader = "\<Space>"
