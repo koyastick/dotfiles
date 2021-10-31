@@ -39,7 +39,6 @@ target=${DOTPATH}/.config/nvim/init.vim
 echo "Creating symlink for $target"
 if [ -e "$target" ]; then
     echo "$target is existing. Skip."
-    continue;
 else
     echo "Creating symlink for $target"
     ln -fvns "$target" "${HOME}/.config/nvim/init.vim"
