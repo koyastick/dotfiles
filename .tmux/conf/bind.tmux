@@ -1,6 +1,6 @@
 # prefixを変更
 unbind-key C-b
-set -g prefix C-t
+set -g prefix C-g
 
 # pane操作のキーバインドを変更
 bind y setw synchronize-panes \; display "synchronize-panes #{?pane_synchronized,on,off}"
