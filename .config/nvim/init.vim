@@ -16,11 +16,10 @@ call plug#begin()
     " Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-" fzf settings
+""" fzf settings
 let $FZF_DEFAULT_OPTS="--layout=reverse"
-let $FZF_DEFAULT_COMMAND='rg --files --hidden --smart-case --glob "!.git/**"' 
+let $FZF_DEFAULT_COMMAND="rg --files --hidden --smart-case --glob '!.git/**'"
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
-
 let mapleader = "\<Space>"
 nnoremap <silent> <leader>f :Files<CR>
 nnoremap <silent> <leader>g :GFiles<CR>
@@ -32,9 +31,6 @@ command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --column --line-number --no-heading --color=always --smart-case --glob "!.git/**" -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
-
-nmap <C-l> :FZF<CR>
-nmap <C-b> :Git blame<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -43,6 +39,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
+nmap <C-b> :Git blame<CR>
 """""""""""""""""""""""
 " vim-airline
 """""""""""""""""""""""
