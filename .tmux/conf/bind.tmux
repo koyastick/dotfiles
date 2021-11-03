@@ -25,7 +25,3 @@ bind -T copy-mode-vi Y send -X copy-line
 bind C-p paste-buffer
 bind -n C-S-Left swap-window -t -1
 bind -n C-S-Right swap-window -t +1
-bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
-bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
-bind -T copy-mode-vi Escape send-keys -X clear-selection
-bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
