@@ -3,7 +3,7 @@ unbind-key C-b
 set -g prefix C-g
 
 # pane操作のキーバインドを変更
-bind y setw synchronize-panes \; display "synchronize-panes #{?pane_synchronized,on,off}"
+bind S setw synchronize-panes \; display "synchronize-panes #{?pane_synchronized,on,off}"
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
