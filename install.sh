@@ -35,13 +35,14 @@ if [ ! -d "$HOME/.config/nvim" ]; then
     echo "Creating ~/.config/nvim"
     mkdir -p "$HOME/.config/nvim"
 fi
+key=${HOME}/.config/nvim/init.vim
 target=${DOTPATH}/.config/nvim/init.vim
 echo "Creating symlink for $target"
-if [ -e "$target" ]; then
-    echo "$target is existing. Skip."
+if [ -e "$key" ]; then
+    echo "$key existing. Skip."
 else
-    echo "Creating symlink for $target"
-    ln -fvns "$target" "${HOME}/.config/nvim/init.vim"
+    ln -fvns "$target" "$key"
+    echo "done"
 fi
 
 # Install plugins managers
