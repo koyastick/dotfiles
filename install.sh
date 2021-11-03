@@ -56,4 +56,7 @@ if [ ! -e  "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim" ];
            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 
+## Install Tmux Plugin Manager, TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 echo "Setup done."
