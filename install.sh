@@ -42,7 +42,6 @@ if [ -e "$key" ]; then
     echo "$key existing. Skip."
 else
     ln -fvns "$target" "$key"
-    echo "done"
 fi
 
 # Install plugins managers
