@@ -7,3 +7,4 @@ set ambiwidth=double
 set wildmenu
 scriptencoding utf-8
 set encoding=utf-8
+set ttimeoutlen=1

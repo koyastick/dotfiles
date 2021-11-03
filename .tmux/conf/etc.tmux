@@ -3,6 +3,7 @@ set-option -g default-shell /bin/zsh
 
 # pane選択時間を延長
 set-option -g display-panes-time 10000
+set -sg escape-time 0
 
 # スクロールでシェルの出力履歴を参照可能にする
 set-option -g mouse on
