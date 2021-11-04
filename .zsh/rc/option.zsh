@@ -2,7 +2,9 @@ setopt print_eight_bit
 setopt interactive_comments
 setopt extended_glob
 setopt no_beep
-setopt auto_pushd setopt auto_cd setopt pushd_ignore_dups
+setopt auto_pushd
+setopt auto_cd
+setopt pushd_ignore_dups
 export FZF_DEFAULT_OPTS='
 --height 50% 
 --reverse
