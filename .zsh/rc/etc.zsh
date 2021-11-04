@@ -2,10 +2,14 @@
 export LANG=ja_JP.UTF-8
 
 # histry
-HISTSIZE=1000000
-SAVEHIST=1000000
-setopt inc_append_history
+export HISTFILE=~/.zsh_history
+export HISTSIZE=1000000
+export SAVEHIST=1000000
 setopt share_history
+setopt inc_append_history
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_reduce_blanks
 
 # auto load
 autoload -Uz colors && colors
