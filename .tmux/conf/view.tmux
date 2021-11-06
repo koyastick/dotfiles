@@ -1,6 +1,7 @@
 # tmuxを256色表示できるようにする
 set-option -g default-terminal screen-256color
 set -g terminal-overrides 'xterm:colors=256'
+set -g pane-active-border-style fg=red
 
 source-file ~/.tmux/iceberg_minimal.tmux.conf
 # source-file ~/.tmux/tmuxcolors-dark.conf
