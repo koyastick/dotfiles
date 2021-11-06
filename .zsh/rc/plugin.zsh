@@ -5,7 +5,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "b4b4r07/enhancd", use:init.sh
-zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
+zplug "junegunn/fzf", from:gh-r, as:command, rename-to:fzf
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug 'dracula/zsh', as:theme
 
