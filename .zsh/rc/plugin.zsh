@@ -7,6 +7,7 @@ zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug 'dracula/zsh', as:theme
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -17,6 +18,11 @@ fi
 
 ## Then, source plugins and add commands to $PATH
 zplug load
+
+# dracula/zsh
+DRACULA_DISPLAY_TIME=1
+DRACULA_DISPLAY_CONTEXT=1
+DRACULA_GIT_NOLOCK=0
 
 # zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
