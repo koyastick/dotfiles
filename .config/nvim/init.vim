@@ -1,5 +1,5 @@
 """""""""""""""""""""""
-" vim-plug
+" vim-plugs
 """""""""""""""""""""""
 call plug#begin()
     Plug 'ntk148v/vim-horizon'
@@ -16,10 +16,21 @@ call plug#begin()
     " Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-""" fzf settings
+"""""""""""""""""""""""
+" NERDTree
+"""""""""""""""""""""""
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+"""""""""""""""""""""""
+" fzf.vim
+"""""""""""""""""""""""
 let $FZF_DEFAULT_OPTS="--layout=reverse"
-let $FZF_DEFAULT_COMMAND="rg --files --hidden --smart-case --glob '!.git/**'"
-let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
+let $FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
+" let g:fzf_layout = {'down':'~50%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
+let g:fzf_layout = {'down':'~40%'}
 let mapleader = "\<Space>"
 nnoremap <silent> <leader>f :Files<CR>
 nnoremap <silent> <leader>g :GFiles<CR>
@@ -31,15 +42,13 @@ command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --hidden --column --line-number --no-heading --color=always --smart-case --glob "!.git/**" -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
+"""""""""""""""""""""""
+" vim-gitgutter
+"""""""""""""""""""""""
 nmap <C-b> :Git blame<CR>
+set updatetime=100
+
 """""""""""""""""""""""
 " vim-airline
 """""""""""""""""""""""
@@ -71,7 +80,7 @@ set nowritebackup
 set nobackup
 set virtualedit=block
 set backspace=indent,eol,start
-set ambiwidth=double
+" set ambiwidth=double
 set wildmenu
 hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 set cursorline
