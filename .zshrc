@@ -25,6 +25,3 @@ export FZF_CTRL_T_OPTS='
 '
 
 export ENHANCD_FILTER='fzf-tmux -r 50%'
-# export FZF_TMUX_OPTS='
-# -r 50%
-# '
