@@ -1,7 +1,0 @@
-setopt print_eight_bit
-setopt interactive_comments
-setopt extended_glob
-setopt no_beep
-setopt auto_pushd
-setopt auto_cd
-setopt pushd_ignore_dups
