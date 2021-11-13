@@ -84,7 +84,7 @@ set backspace=indent,eol,start
 set wildmenu
 hi CursorLineNr term=bold   cterm=NONE ctermfg=228 ctermbg=NONE
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 " set guicursor+=c:ver10
 set shell=/bin/zsh
 set ttimeoutlen=50
