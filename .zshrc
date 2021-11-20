@@ -10,6 +10,7 @@ zplug "b4b4r07/enhancd", use:init.sh
 # zplug "junegunn/fzf", from:gh-r, as:command, rename-to:fzf
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug 'dracula/zsh', as:theme
+
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
@@ -29,6 +30,7 @@ DRACULA_GIT_NOLOCK=0
 # zsh-autosuggestions
 ###################################
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=038,underline'
+bindkey "^O" forward-word
 
 ###################################
 # history-substring-search
