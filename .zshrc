@@ -39,15 +39,12 @@ if zplug check "zsh-users/zsh-history-substring-search"; then
   bindkey "$terminfo[kcuu1]" history-substring-search-up
   bindkey "$terminfo[kcud1]" history-substring-search-down
 fi
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=bg=cyan,fg=white,bold
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=fg=black,bg=blue
 
 ###################################
 # zsh-syntax-highlighting
 ###################################
-# ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=cyan,underline
-# ZSH_HIGHLIGHT_STYLES[precommand]=fg=cyan,underline
-# ZSH_HIGHLIGHT_STYLES[arg0]=fg=cyan,bold
-ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 ###################################
 # fzf
@@ -117,6 +114,6 @@ autoload -Uz colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz select-word-style
 select-word-style default
-export WORDCHARS="*?_-.[]~&;=!#$%^(){}<>|"
-zstyle ':zle:*' word-chars "*?_-.[]~&;=!#$%^(){}<>|"
+export WORDCHARS="*?_-.[]~&;=!#$%^(){}<>|\""
+zstyle ':zle:*' word-chars "*?_-.[]~&;=!#$%^(){}<>|\""
 zstyle ':zle:*' word-style unspecified
