@@ -117,6 +117,6 @@ autoload -Uz colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz select-word-style
 select-word-style default
-export WORDCHARS="*?_-.[]~&;=!#$%^(){}<>"
-zstyle ':zle:*' word-chars "*?_-.[]~&;=!#$%^(){}<>"
+export WORDCHARS="*?_-.[]~&;=!#$%^(){}<>|"
+zstyle ':zle:*' word-chars "*?_-.[]~&;=!#$%^(){}<>|"
 zstyle ':zle:*' word-style unspecified
