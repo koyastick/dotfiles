@@ -28,7 +28,7 @@ DRACULA_GIT_NOLOCK=0
 ###################################
 # zsh-autosuggestions
 ###################################
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=038,underline'
 
 ###################################
 # history-substring-search
