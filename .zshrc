@@ -10,6 +10,7 @@ zplug "b4b4r07/enhancd", use:init.sh
 # zplug "junegunn/fzf", from:gh-r, as:command, rename-to:fzf
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug 'dracula/zsh', as:theme
+zplug "RiverGlide/zsh-goenv", from:gitlab
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
