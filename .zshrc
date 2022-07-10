@@ -30,7 +30,7 @@ DRACULA_GIT_NOLOCK=0
 ###################################
 # zsh-autosuggestions
 ###################################
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=038,underline'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6495ed,bold,underline"
 bindkey "^O" forward-word
 
 ###################################
@@ -115,6 +115,6 @@ autoload -Uz colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz select-word-style
 select-word-style default
-export WORDCHARS="*?_-.[]~&;=!#$%^(){}<>|\""
-zstyle ':zle:*' word-chars "*?_-.[]~&;=!#$%^(){}<>|\""
+export WORDCHARS=" *?_-.[]~&;=!#$%^(){}<>|\""
+zstyle ':zle:*' word-chars " *?_-.[]~&;=!#$%^(){}<>|\""
 zstyle ':zle:*' word-style unspecified
