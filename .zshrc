@@ -52,8 +52,6 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ###################################
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
-export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
-export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude '.git'"
 export FZF_DEFAULT_OPTS='
 --height 80%
 --reverse
@@ -61,9 +59,10 @@ export FZF_DEFAULT_OPTS='
 --color dark,hl:51,hl+:51,fg:249,bg+:238,fg+:254
 --color info:30,prompt:123,spinner:50,pointer:37,marker:254
 '
-export FZF_CTRL_T_OPTS='
---preview "bat --style=numbers --color=always --line-range :500 {}"
-'
+export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
+export FZF_CTRL_T_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
+export FZF_ALT_C_COMMAND="fd --type d --max-depth=5 --hidden --exclude '.git'"
+export FZF_ALT_C_OPTS='--preview "exa -laF --color=always {}"'
 export ENHANCD_FILTER='fzf-tmux -r 50%'
 bindkey "ç" fzf-cd-widget
 
