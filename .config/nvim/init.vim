@@ -1,5 +1,7 @@
 """""""""""""""""""""""
-" vim-plugs
+" plugins
+" 1. Install vim-plug according to "https://github.com/junegunn/vim-plug"
+" 2. execute ":PlugInstall" to install plugins with vim-plug
 """""""""""""""""""""""
 call plug#begin()
     Plug 'ntk148v/vim-horizon'
@@ -31,10 +33,10 @@ nnoremap <C-f> :NERDTreeFind<CR>
 """""""""""""""""""""""
 " fzf.vim
 """""""""""""""""""""""
-let $FZF_DEFAULT_OPTS="--layout=reverse"
 let $FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
-" let g:fzf_layout = {'down':'~50%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
-let g:fzf_layout = {'down':'~40%'}
+let $FZF_DEFAULT_OPTS="--layout=reverse"
+let g:fzf_layout = {'down':'~50%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp' } }
+" let g:fzf_layout = {'down':'~40%'}
 let mapleader = "\<Space>"
 nnoremap <silent> <leader>f :Files<CR>
 nnoremap <silent> <leader>g :GFiles<CR>
