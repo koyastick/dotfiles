@@ -93,13 +93,6 @@ alias gb='git checkout $(git for-each-ref --format="%(authorname) %09 %(refname:
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
-setopt print_eight_bit
-setopt interactive_comments
-setopt extended_glob
-setopt no_beep
-setopt auto_pushd
-setopt auto_cd
-setopt pushd_ignore_dups
 ## lang config
 export LANG=ja_JP.UTF-8
 ## histry
@@ -111,9 +104,21 @@ setopt inc_append_history
 setopt hist_ignore_dups
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
-autoload -Uz colors && colors
-autoload -Uz compinit && compinit
+# separator config
 autoload -Uz select-word-style
 select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
+# enable color
+autoload -Uz colors && colors
+# enable completion
+autoload -Uz compinit && compinit
+# others
+setopt print_eight_bit
+setopt interactive_comments
+setopt extended_glob
+setopt no_beep
+setopt auto_pushd
+setopt auto_cd
+setopt pushd_ignore_dups
+
