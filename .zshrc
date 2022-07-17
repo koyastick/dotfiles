@@ -49,6 +49,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
 ###################################
 # fzf
+# install according to
+# https://github.com/junegunn/fzf
 ###################################
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
