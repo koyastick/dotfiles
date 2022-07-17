@@ -108,6 +108,7 @@ setopt hist_reduce_blanks
 # separator config
 autoload -Uz select-word-style
 select-word-style default
+export WORDCHARS='-'
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 # enable color
