@@ -55,7 +55,7 @@ export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude '.git'"
 export FZF_DEFAULT_OPTS='
---height 50%
+--height 80%
 --reverse
 --border
 --color dark,hl:51,hl+:51,fg:249,bg+:238,fg+:254
@@ -115,6 +115,5 @@ autoload -Uz colors && colors
 autoload -Uz compinit && compinit
 autoload -Uz select-word-style
 select-word-style default
-export WORDCHARS=" *?_-.[]~&;=!#$%^(){}<>|\""
-zstyle ':zle:*' word-chars " *?_-.[]~&;=!#$%^(){}<>|\""
+zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
