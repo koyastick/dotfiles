@@ -49,6 +49,8 @@ fi
 if [[ ! -d ~/.zplug ]];then
   git clone https://github.com/zplug/zplug ~/.zplug
 fi
+## initial compile .zshrc
+zcompile ~/.zshrc
 
 ## Install vim-plug
 if [ ! -e  "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim" ]; then
