@@ -1,5 +1,6 @@
 ###################################
 # plugins
+# Execute "git clone https://github.com/zplug/zplug ~/.zplug" to install zsh plugin manager, zplug
 # Execute "zplug install" to install zsh plugins
 ###################################
 source $HOME/.zplug/init.zsh
