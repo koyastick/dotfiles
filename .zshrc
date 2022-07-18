@@ -125,6 +125,6 @@ setopt auto_pushd
 setopt auto_cd
 setopt pushd_ignore_dups
 
-if [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+if [[ ~/.zshrc -nt ~/.zshrc.zwc || ~/.zshrc.local -nt ~/.zshrc.zwc ]]; then
   zcompile ~/.zshrc
 fi
