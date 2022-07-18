@@ -1,5 +1,6 @@
 ###################################
 # plugins
+# Execute "zplug install" to install zsh plugins
 ###################################
 source $HOME/.zplug/init.zsh
 zplug "yous/vanilli.sh"
@@ -12,12 +13,12 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug 'dracula/zsh', as:theme
 # zplug "RiverGlide/zsh-goenv", from:gitlab
 
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
+# if ! zplug check --verbose; then
+#     printf "Install? [y/N]: "
+#     if read -q; then
+#         echo; zplug install
+#     fi
+# fi
 zplug load
 
 ###################################
