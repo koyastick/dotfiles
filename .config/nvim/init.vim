@@ -20,7 +20,6 @@ call plug#begin()
     Plug 'mattn/vim-lsp-settings'
     Plug 'prabirshrestha/asyncomplete.vim'
     Plug 'prabirshrestha/asyncomplete-lsp.vim'
-    Plug 'christoomey/vim-tmux-navigator'
     Plug 'jiangmiao/auto-pairs'
     " Plug 'sheerun/vim-polyglot'
 call plug#end()
