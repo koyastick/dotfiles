@@ -11,7 +11,7 @@ zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "b4b4r07/enhancd", use:init.sh
 # zplug "junegunn/fzf", from:gh-r, as:command, rename-to:fzf
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug 'dracula/zsh', as:theme
+zplug "themes/crcandy", from:oh-my-zsh, as:theme
 # zplug "RiverGlide/zsh-goenv", from:gitlab
 
 # if ! zplug check --verbose; then
@@ -97,7 +97,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 ## lang config
-export LANG=ja_JP.UTF-8
+export LANG=en_US.UTF-8
 ## histry
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000
