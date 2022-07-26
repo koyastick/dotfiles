@@ -170,3 +170,4 @@ map sj <C-w>j
 map sl <C-w>l
 " Switch tab
 nmap <S-Tab> :tabprev<Return>
+nmap <Tab> :tabnext<Return>
