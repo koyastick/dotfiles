@@ -16,6 +16,7 @@ call plug#begin()
     Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
     Plug 'cocopon/iceberg.vim' , { 'branch': 'master' }
     Plug 'ericbn/vim-solarized'
+    Plug 'arcticicestudio/nord-vim'
     Plug 'prabirshrestha/vim-lsp'
     Plug 'mattn/vim-lsp-settings'
     Plug 'prabirshrestha/asyncomplete.vim'
@@ -65,14 +66,14 @@ let g:airline#extensions#tabline#enabled = 1
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
 let g:airline_section_z = "help"
-let g:airline_theme = 'solarized'
+" let g:airline_theme = "fixme"
 let g:airline_section_z = get(g:, 'airline_linecolumn_prefix', '').'[%2p%%]%4l/%-4Lln:%-2v'
 
 """""""""""""""""""""""
 " color scheme
 """""""""""""""""""""""
 set background=dark
-colorscheme solarized
+colorscheme nord
 
 """""""""""""""""""""""
 " vim-lsp
