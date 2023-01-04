@@ -71,6 +71,14 @@ export ENHANCD_FILTER='fzf-tmux -r 50%'
 bindkey "ç" fzf-cd-widget
 
 ###################################
+# kubernetes cli util
+###################################
+alias k="kubectl"
+if type kubectl > /dev/null; then
+    source <(kubectl completion zsh)
+fi
+
+###################################
 # basic configurations
 ###################################
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
