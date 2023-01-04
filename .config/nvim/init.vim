@@ -77,6 +77,8 @@ colorscheme solarized
 """""""""""""""""""""""
 " vim-lsp
 """""""""""""""""""""""
+nmap <C-s> :LspInstallServer<CR>
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes
