@@ -73,6 +73,7 @@ let g:airline_section_z = get(g:, 'airline_linecolumn_prefix', '').'[%2p%%]%4l/%
 " color scheme
 """""""""""""""""""""""
 set background=dark
+set termguicolors
 colorscheme nord
 
 """""""""""""""""""""""
