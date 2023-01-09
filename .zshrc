@@ -124,7 +124,7 @@ zstyle ':zle:*' word-style unspecified
 # enable color
 autoload -Uz colors && colors
 # enable completion
-# autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit
 # others
 setopt print_eight_bit
 setopt interactive_comments
