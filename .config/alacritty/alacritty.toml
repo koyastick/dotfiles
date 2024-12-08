@@ -398,12 +398,12 @@ mods = "Control"
 
 [[keyboard.bindings]]
 chars = "\u001B`"
-key = "Grave"
+key = "`"
 mods = "Alt"
 
 [[keyboard.bindings]]
 chars = "\u001B~"
-key = "Grave"
+key = "`"
 mods = "Alt|Shift"
 
 [[keyboard.bindings]]
