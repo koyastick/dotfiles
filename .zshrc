@@ -108,8 +108,8 @@ alias view="nvim -R"
 export LANG=en_US.UTF-8
 ## histry
 export HISTFILE=~/.zsh_history
-export HISTSIZE=1000000
-export SAVEHIST=1000000
+export HISTSIZE=1000000000
+export SAVEHIST=1000000000
 setopt share_history
 setopt inc_append_history
 setopt hist_ignore_dups
