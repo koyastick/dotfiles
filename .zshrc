@@ -66,7 +66,7 @@ export FZF_DEFAULT_OPTS='
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
 export FZF_CTRL_T_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
 export FZF_ALT_C_COMMAND="fd --type d --max-depth=5 --hidden --exclude '.git'"
-export FZF_ALT_C_OPTS='--preview "exa -laF --color=always {}"'
+export FZF_ALT_C_OPTS='--preview "eza -laF --color=always {}"'
 export ENHANCD_FILTER='fzf-tmux -r 50%'
 bindkey "ç" fzf-cd-widget
 
